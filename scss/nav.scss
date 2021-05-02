@@ -1,0 +1,46 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 30px 0 20px 0;
+  margin-bottom: 63.5px;
+
+  .links {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    font-family: Gill;
+  }
+  span {
+    color: #ee4367;
+    font-size: 25px;
+    font-family: Gill;
+  }
+}
+
+.white-nav {
+  border-bottom: 2px solid white;
+  a {
+    color: white;
+  }
+}
+.black-nav {
+  border-bottom: 2px solid black;
+  a {
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  nav {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

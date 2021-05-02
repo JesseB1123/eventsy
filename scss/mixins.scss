@@ -1,0 +1,41 @@
+@mixin site-button($ButtonPadding: 10px, $ButtonColor: $site-pink) {
+  padding: ($ButtonPadding)/2 $ButtonPadding ($ButtonPadding)/2 $ButtonPadding;
+  background-color: $ButtonColor;
+  font-family: Gill;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+}
+
+@mixin timestamp($StampSize: 60px, $DateFontSize: 22, $MonthFontSize: 12) {
+  width: $StampSize;
+  height: $StampSize;
+  background-color: $site-pink;
+  font-family: Gill;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-family: Gill-Bold;
+    margin-bottom: 0;
+    font-size: $DateFontSize;
+  }
+  p {
+    font-family: Gill-Light;
+    margin-bottom: 5px;
+    font-size: $MonthFontSize;
+    text-transform: uppercase;
+  }
+}
+
+@mixin columns() {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .column {
+    width: 48%;
+  }
+}

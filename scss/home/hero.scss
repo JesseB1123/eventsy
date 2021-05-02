@@ -1,0 +1,36 @@
+.hero-image {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, $overlay-yellow, $overlay-yellow),
+    url(../assets/home/home-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .hero-content {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+      font-weight: 100;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-family: Gill;
+      font-style: italic;
+      font-size: 20px;
+      color: $site-pink;
+      margin-bottom: 50px;
+    }
+    p:last-of-type {
+      color: white;
+      margin-bottom: 60px;
+    }
+    a {
+      @include site-button($ButtonPadding: 20px);
+    }
+  }
+}

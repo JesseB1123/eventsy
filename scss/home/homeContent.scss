@@ -1,0 +1,82 @@
+.homeContent {
+  width: 100%;
+
+  .quote {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5px 0 5px;
+
+    p {
+      font-family: Gill;
+      font-size: 15px;
+      color: $site-yellow;
+      max-width: 798px;
+      margin: 0 auto;
+      line-height: 2;
+      font-style: italic;
+    }
+    .author {
+      padding-top: 20px;
+
+      h4 {
+        font-size: 15px;
+        color: $site-pink;
+        max-width: 798px;
+        margin-bottom: 5px;
+        margin: 0 auto;
+      }
+      p {
+        font-family: PTSerif;
+        color: lightgray;
+        font-size: 10px;
+        margin: 0 auto;
+        font-style: normal;
+      }
+    }
+  }
+  .upcoming-events {
+    width: 100%;
+    min-height: 320px;
+    background-color: $site-purple;
+    padding: 50px 40px 50px 40px;
+
+    h1 {
+      font-family: Gill;
+      font-weight: 10;
+      font-size: 25px;
+      border-bottom: 2px solid white;
+      width: 392px;
+      margin-bottom: 34.5px;
+    }
+    .event-list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .event {
+        display: flex;
+
+        .timestamp {
+          @include timestamp();
+        }
+        .details {
+          width: 140px;
+          margin-left: 20px;
+
+          p {
+            font-family: Gill;
+            color: white;
+            font-size: 15px;
+          }
+          p:last-child {
+            color: $site-pink;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

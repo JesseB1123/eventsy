@@ -1,0 +1,36 @@
+//import the variables and mixins for the scss
+@import "variables.scss";
+@import "mixins.scss";
+
+//import the base structure styling of the site
+@import "structure.scss";
+
+//import the styling for the navbar
+@import "nav.scss";
+
+//import the styling for the home page
+@import "home/hero.scss";
+@import "home/homeContent.scss";
+
+//import the styling for the about page
+@import "about/aboutContent.scss";
+
+//import the styling for the gallery page
+@import "gallery/galleryContent.scss";
+
+//import the styling for the five event pages
+@import "events/foodFestival.scss";
+@import "events/deeJay.scss";
+@import "events/speech.scss";
+@import "events/openFoodfest.scss";
+@import "events/international.scss";
+
+//import the styling for the blog pages
+@import "blog/blogContent.scss";
+@import "blog/blogPost.scss";
+
+//import the styling for the contact page
+@import "contact/contactContent.scss";
+
+//import the styling for the footer
+@import "footer.scss";

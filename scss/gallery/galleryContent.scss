@@ -1,0 +1,125 @@
+.galleryContent {
+  width: 100%;
+
+  .header {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-bottom: 29.5px;
+
+    h1 {
+      font-family: Gill;
+      color: black;
+      border-bottom: 2px solid black;
+      font-size: 29px;
+      width: 229px;
+      letter-spacing: 5px;
+    }
+  }
+  .gallery {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    .gallery-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .one {
+        width: 489px;
+        height: 187px;
+        background-image: linear-gradient(
+            to right,
+            $overlay-yellow,
+            $overlay-yellow
+          ),
+          url(../assets/gallery/1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .two {
+        width: 187px;
+        height: 187px;
+        background-image: linear-gradient(
+            to right,
+            $overlay-pink,
+            $overlay-pink
+          ),
+          url(../assets/gallery/2.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .three {
+        width: 265px;
+        height: 187px;
+        background-image: linear-gradient(
+            to right,
+            $overlay-green,
+            $overlay-green
+          ),
+          url(../assets/gallery/3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .four {
+        width: 603px;
+        height: 306px;
+        background-image: linear-gradient(
+            to right,
+            $overlay-purple,
+            $overlay-purple
+          ),
+          url(../assets/gallery/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .five {
+        width: 355px;
+        height: 306px;
+        background-image: linear-gradient(
+            to right,
+            $overlay-cyan,
+            $overlay-cyan
+          ),
+          url(../assets/gallery/5.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .galleryContent {
+    padding-left: 5px;
+    padding-right: 5px;
+    .header {
+      display: flex;
+      justify-content: center;
+      h1 {
+        text-align: center;
+      }
+    }
+    .gallery {
+      .gallery-row {
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        .one,
+        .two,
+        .three,
+        .four,
+        .five {
+          width: 100%;
+          margin-bottom: 20px;
+          height: 187px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.contactContent {
+  width: 100%;
+
+  .header {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-bottom: 65.5px;
+
+    h1 {
+      font-family: Gill;
+      color: black;
+      font-size: 25px;
+      border-bottom: 2px solid black;
+      letter-spacing: 5px;
+      width: 229px;
+    }
+  }
+  .content {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+
+    form {
+      width: 529px;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        border: none;
+        background-color: rgb(245, 245, 245);
+        height: 60px;
+        margin-bottom: 21px;
+        font-family: Gill;
+        font-size: 16px;
+        padding: 20px;
+      }
+      textarea {
+        border: none;
+        background-color: rgb(245, 245, 245);
+        margin-bottom: 21px;
+        font-family: Gill;
+        font-size: 16px;
+        padding: 20px;
+      }
+      .button {
+        @include site-button();
+        font-size: 16px;
+        padding: 20px;
+      }
+    }
+    .map {
+      background-image: url(../assets/contact/map.jpg);
+      width: 400px;
+      height: 442px;
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .contactContent {
+    .header {
+      display: flex;
+      justify-content: center;
+      h1 {
+        text-align: center;
+      }
+    }
+    .content {
+      flex-direction: column;
+      form {
+        width: 480px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        .button {
+          margin: 0 auto;
+        }
+      }
+      .map {
+        margin: 0 auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.aboutContent {
+  width: 100%;
+
+  .big-image {
+    max-width: 979.5px;
+    height: 378.75px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to right,
+        $overlay-yellow,
+        $overlay-yellow
+      ),
+      url(../assets/about/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .header {
+    max-width: 979.5px;
+    margin: 0 auto;
+    margin-top: -25px;
+    margin-bottom: 36.5px;
+
+    h1 {
+      font-family: Gill;
+      color: black;
+      font-size: 25px;
+      border-bottom: 2px solid black;
+      width: 229px;
+      padding-bottom: 10px;
+    }
+  }
+  p {
+    font-family: Gill;
+    font-size: 15px;
+    font-style: italic;
+    max-width: 979.5px;
+    margin: 0 auto;
+    color: rgb(112, 112, 112);
+    padding-bottom: 95px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .aboutContent {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
